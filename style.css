@@ -1,0 +1,12 @@
+.sub-container{
+    width: 500px; 
+    margin-left: 25%; 
+    margin-right: 25%;
+    margin-top: 10%;
+    background-color: #F5F5FF;
+    border-bottom: 2px solid #DADADB;
+    border-left: 1px solid #DADADB;
+    border-right: 1px solid #DADADB;
+    border-top: 1px solid #DADADB;
+    padding: 30px;
+}
