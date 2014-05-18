@@ -11,8 +11,10 @@
         <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
         <!--Firebase Log-in --> 
         <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
-        <!--Custom JS --> 
+        <!--Custom JS & jQuery --> 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type='text/javascript' src='./script.js'></script>
+    
 
         
     </head>
@@ -31,8 +33,12 @@
                         <label for="password"> Password </label>
                         <input type = "password" id = "password" class = "form-control" placeholder = "Enter your password here">
                     </div>
+                    
+                     <button class="btn btn-default" id = "submitButton">Submit</button>
                 </form>
             </div>
+            
+            <div class = "approve-container"> </div>
         
         </div>
     </body>
