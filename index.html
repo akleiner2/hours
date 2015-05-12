@@ -1,27 +1,19 @@
+<!-- This is mostly a POC and can definitely be refactored a shit ton -->   
 <html> 
     <head> 
         <title> 
             Hours Test 
         </title>
         <!-- Custom Stylesheet --> 
-        <link rel = "stylesheet" type="text/css" href="style.css"/>
+        <link rel = "stylesheet" type="text/css" href="./style.css"/>
         <!--Bootstrap Style --> 
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-        <!--Firebase Script--> 
-        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
-        <!--Firebase Log-in --> 
-        <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
-        <!--Custom JS & jQuery --> 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type='text/javascript' src='./script.js'></script>
-    
-
         
     </head>
     
     <body> 
         <div class = "container"> 
-            <div class = "sub-container">
+            <article class = "login">
                 <h1> Log-In Here!</h1>
                 <form role="form">
                     <div class = "form-group">
@@ -39,7 +31,59 @@
             </div>
             
             <div class = "approve-container"> </div>
+
+            <article class = "register"> 
+                <h1> Register Here </h1> 
+                <form role = "form"> 
+                    <div class = "form-group"> 
+                        <label for="username"> Username </label> 
+                        <input type = "email" id = "username" class = "form-control" placeholder = "Enter your e-mail here">
+                    </div> 
+
+                    <div class = "form-group"> 
+                        <label for="password"> Password </label> 
+                        <input type = "password" id = "password" class = "form-control" placeholder = "Enter your password here">
+                    </div> 
+
+                    <div class = "form-group"> 
+                        <label for="confirm"> Confirm Password </label> 
+                        <input type = "password" id = "confirm" class = "form-control" placeholder = "Confirm password">
+                    </div>
+
+                    <button class = "btn btn-default" id = "confirmButton"> Register </button> 
+                </form>
+            </article>
+
+            <article class = "timecard"> 
+                <h2 class = "header"> Timecard </h2> 
+                <h4 class = "remaining"> </h4> 
+                <ul class = "days"> 
+                    <li id = "m"> Monday </li> 
+                    <li id = "t"> Tuesday </li> 
+                    <li id = "w"> Wednesday </li> 
+                    <li id = "r"> Thursday </li> 
+                    <li id = "f"> Friday </li> 
+                </ul> 
+
+                <div class = "checkins"> 
+                    <button class = "btn btn-primary" id = "checkIn"> Check In </button> 
+                    <button class = "btn btn-primary" id = "checkOut"> Check Out </button> 
+                </div> 
+
+            </article>
         
         </div>
+
+        <footer class = 'footer'> 
+            <p> Made with &lt;3 by <a href = "http://allenk.me"> Allen Kleiner</a> </p>
+        </footer> 
+         <!--Firebase Script--> 
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+        <!--Firebase Log-in --> 
+        <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
+        <!--Custom JS & jQuery --> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type='text/javascript' src='./script.js'></script>
+    
     </body>
 </html>
