@@ -18,31 +18,30 @@
                 <form role="form">
                     <div class = "form-group">
                         <label for="username"> Username </label>
-                        <input type = "email" id = "username" class = "form-control" placeholder = "Enter your e-mail here">
+                        <input type = "email" id = "login-email" class = "form-control" placeholder = "Enter your e-mail here">
                     </div>
                     
                     <div class = "form-group">
                         <label for="password"> Password </label>
-                        <input type = "password" id = "password" class = "form-control" placeholder = "Enter your password here">
+                        <input type = "password" id = "login-password" class = "form-control" placeholder = "Enter your password here">
                     </div>
                     
                      <button class="btn btn-default" id = "submitButton">Submit</button>
                 </form>
-            </div>
-            
-            <div class = "approve-container"> </div>
+                <p> Don't have an account? You can register <a href = "#" id = "reg"> here </a> 
+            </article>
 
-            <article class = "register"> 
+            <article class = "register hide"> 
                 <h1> Register Here </h1> 
                 <form role = "form"> 
                     <div class = "form-group"> 
                         <label for="username"> Username </label> 
-                        <input type = "email" id = "username" class = "form-control" placeholder = "Enter your e-mail here">
+                        <input type = "email" id = "reg-email" class = "form-control" placeholder = "Enter your e-mail here">
                     </div> 
 
                     <div class = "form-group"> 
                         <label for="password"> Password </label> 
-                        <input type = "password" id = "password" class = "form-control" placeholder = "Enter your password here">
+                        <input type = "password" id = "reg-password" class = "form-control" placeholder = "Enter your password here">
                     </div> 
 
                     <div class = "form-group"> 
@@ -50,11 +49,11 @@
                         <input type = "password" id = "confirm" class = "form-control" placeholder = "Confirm password">
                     </div>
 
-                    <button class = "btn btn-default" id = "confirmButton"> Register </button> 
+                    <button class = "btn btn-default" id = "registerButton"> Register </button> 
                 </form>
             </article>
 
-            <article class = "timecard"> 
+            <article class = "timecard hide"> 
                 <h2 class = "header"> Timecard </h2> 
                 <h4 class = "remaining"> </h4> 
                 <ul class = "days"> 
@@ -75,12 +74,12 @@
         </div>
 
         <footer class = 'footer'> 
-            <p> Made with &lt;3 by <a href = "http://allenk.me"> Allen Kleiner</a> </p>
+            <center>
+                <p id = "footer-text"> Made with &lt;3 by <a href = "http://allenk.me"> Allen Kleiner</a> </p>
+            </center>        
         </footer> 
          <!--Firebase Script--> 
-        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
-        <!--Firebase Log-in --> 
-        <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
+         <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
         <!--Custom JS & jQuery --> 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type='text/javascript' src='./script.js'></script>
